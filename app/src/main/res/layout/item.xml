@@ -1,19 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="1dp"
-    android:background="@color/colorWhite"
-    android:orientation="vertical">
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="1dp"
+              android:background="@color/colorWhite"
+              android:orientation="vertical">
 
+    <!--<TextView-->
+            <!--android:id="@+id/item_text_view_1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:lineSpacingExtra="8sp"-->
+            <!--android:textAlignment="textStart"-->
+            <!--android:visibility="visible"-->
+            <!--tools:text="text1"-->
+            <!--android:textColor="@color/colorGrey"-->
+            <!--android:layout_margin="4dp"-->
+    <!--/>-->
     <TextView
-        android:id="@+id/item_text_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:lineSpacingExtra="8sp"
-        android:textAlignment="textStart"
-        android:visibility="visible"
-        tools:text="wewe" />
+            android:id="@+id/item_text_view_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:text="text1"
+            android:textColor="@color/colorGrey"
+            android:layout_margin="4dp"
+    />
+    <TextView
+            android:id="@+id/item_text_view_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:text="text2"
+            android:layout_margin="4dp"
+    />
 
 </LinearLayout>

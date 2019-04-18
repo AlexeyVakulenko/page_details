@@ -1,10 +1,8 @@
 package com.example.a16680399.myapplication;
 
 import android.content.Context;
-import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -28,25 +26,29 @@ public class Adapter extends RecyclerView.Adapter<Adapter.Holder> {
 
     @Override
     public void onBindViewHolder(@NonNull Holder holder, int i) {
-        holder.bind("test" + i);
+        holder.bind("Очень важный проверочный текст. Очень важный проверочный текст. Очень важный проверочный текст 1" + i, "Очень важный проверочный текст. Очень важный проверочный текст. Очень важный проверочный текст 2" + i);
     }
 
     @Override
     public int getItemCount() {
-        return 100;
+        return 5;
     }
 
     public class Holder extends RecyclerView.ViewHolder {
 
-        private TextView textView;
+        private TextView textView1;
+
+        private TextView textView2;
 
         public Holder(@NonNull View itemView) {
             super(itemView);
-            textView = itemView.findViewById(R.id.item_text_view);
+            textView1 = itemView.findViewById(R.id.item_text_view_1);
+            textView2 = itemView.findViewById(R.id.item_text_view_2);
         }
 
-        public void bind(String text) {
-            textView.setText(text);
+        public void bind(String text1, String text2) {
+            textView1.setText(text1);
+            textView2.setText(text2);
         }
     }
 }
