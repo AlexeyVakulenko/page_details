@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Мы пока не умеем переходать в чат, но обязательно научимся))", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Мы пока не умеем переходить в чат, но обязательно научимся))", Toast.LENGTH_SHORT).show();
             }
         });
     }
