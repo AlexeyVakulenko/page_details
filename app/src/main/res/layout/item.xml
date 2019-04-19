@@ -1,39 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:tools="http://schemas.android.com/tools"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:layout_margin="1dp"
-              android:background="@color/colorWhite"
-              android:orientation="vertical">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
 
-    <!--<TextView-->
-            <!--android:id="@+id/item_text_view_1"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:lineSpacingExtra="8sp"-->
-            <!--android:textAlignment="textStart"-->
-            <!--android:visibility="visible"-->
-            <!--tools:text="text1"-->
-            <!--android:textColor="@color/colorGrey"-->
-            <!--android:layout_margin="4dp"-->
-    <!--/>-->
-    <TextView
-            android:id="@+id/item_text_view_1"
-            android:layout_width="match_parent"
+
+    <ImageView
+            android:layout_width="30dp"
             android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
             android:visibility="visible"
-            android:text="text1"
-            android:textColor="@color/colorGrey"
-            android:layout_margin="4dp"
-    />
-    <TextView
-            android:id="@+id/item_text_view_2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:visibility="visible"
-            android:text="text2"
-            android:layout_margin="4dp"
+            android:layout_marginLeft="-1dp"
+            android:id="@+id/imageView2"
     />
 
-</LinearLayout>
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/imageView2"
+            android:layout_marginLeft="28dp"
+    >
+
+        <TextView
+                android:id="@+id/item_text_view_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:text="text1"
+                android:textColor="@color/colorGrey"
+                android:layout_weight="1"
+                android:textSize="12sp"/>
+        <TextView
+                android:id="@+id/item_text_view_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:text="text2"
+                android:textColor="@color/colorBlack"
+                android:layout_weight="1"
+        />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

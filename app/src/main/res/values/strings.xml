@@ -1,4 +1,12 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">SBOL DETAILED</string>
     <string name="action_settings">Settings</string>
+    <string name="head_1">Классическое уведомление</string>
+    <string name="content_1">Константин Константинович, приглашаем вас для получения карты VISA1234 в офис по адресу: г.
+        Москва, ул. Ак. Королева, 12
+    </string>
+    <string name="head_2">Что нужно для получения</string>
+    <string name="content_2">Чтобы получить карту, возьмите с собой паспорт.\n\nДля получения карты за другого человека, необходима натариальная доверенность</string>
+    <string name="head_3">Срок хранения</string>
+    <string name="content_3">Карта хранится в течении 3 месяцев с момента её поступления в офис банка</string>
 </resources>
